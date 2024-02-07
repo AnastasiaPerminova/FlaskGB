@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        {% block title %} Мой интернет-магазин. Homework2 {% endblock %}
+    </title>
+
+</head>
+    <a href="{{ url_for('index') }}">Главная</a>
+    <a href="{{ url_for('about') }}">О нас</a>
+    <a href="{{ url_for('contact') }}">Контакты</a>
+
+<body>
+{% block header %}
+{% endblock %}
+
+
+
+{% block content %}
+<p>
+
+</p>
+{% endblock %}
+{% block menu %}
+
+{% endblock %}
+{% block footer %}
+<p1>
+    @Perminova Anastasia
+</p1>
+{% endblock %}
+</body>
+</html>
