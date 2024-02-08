@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+
+{% block title %}Задание 4{% endblock title %}
+
+{% block content %}
+<h1>Задание 4</h1>
+<p>Создать страницу, на которой будет форма для ввода текста и
+    кнопка "Отправить"
+    При нажатии кнопки будет произведен подсчет количества слов
+    в тексте и переход на страницу с результатом.</p>
+
+<form action="/task_4" method="post">
+    <textarea name="text" cols="30" rows="4"
+              placeholder="Введите текст"></textarea><br>
+    <input type="submit" value="Отправить">
+</form>
+{% endblock content %}

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Задание 5{% endblock title %}
+
+{% block content %}
+<div class="about">
+    <div class="container">
+        <form action="/task_5" method="post">
+            <input type="number" name="num1" placeholder="Число 1">
+            <select name="operation">
+                <option selected value="plus">+</option>
+                <option selected value="minus">-</option>
+                <option selected value="mult">*</option>
+                <option selected value="div">/</option>
+            </select>
+            <input type="number" name="num2" placeholder="Число 2">
+            <input type="submit" value="Вычислить">
+        </form>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Задание 7{% endblock title %}
+{% block content %}
+<div class="about">
+    <div class="container">
+        <form action="/task_7" method="post">
+            <input type="number" name="num" placeholder="Введите число">
+            <input type="submit" value="Вычислить">
+        </form>
+    </div>
+</div>
+{% endblock %}

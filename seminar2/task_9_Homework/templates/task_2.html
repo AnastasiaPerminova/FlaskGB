@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+
+{% block title %}Задание 2{% endblock title %}
+
+{% block content %}
+<h1>Задание 2</h1>
+<p>Создать страницу, на которой будет изображение и ссылка
+    на другую страницу, на которой будет отображаться форма
+    для загрузки изображений.</p>
+
+<img src="{{ url_for('static', filename='images/python.png') }}"
+     alt="Изображение">
+<p><a href="{{ url_for('task_2_upload') }}">Ссылка на загрузку изображения</a>
+</p>
+
+{% endblock content %}
