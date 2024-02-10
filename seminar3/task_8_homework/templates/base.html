@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>{% block title %}Seminar 3{% endblock title %}</title>
+    <meta name="description" content="website description"/>
+    <meta name="keywords" content="website keywords, website keywords"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" title="style"/>
+</head>
+
+<body>
+<div id="main">
+    <div id="header">
+        <div id="logo">
+            <div id="logo_text">
+                <!-- class="logo_colour", allows you to change the colour of the text -->
+                <h1><a href="{{ url_for('index') }}">Homework<span class="logo_colour">Seminar 3</span></a></h1>
+
+            </div>
+        </div>
+        {% include 'menu.html' %}
+    </div>
+    <div id="site_content">
+        {#        <div class="sidebar">#}
+        {#            <!-- insert your sidebar items here -->#}
+        {#            {#            <ul>#}
+        {#                <li><a href="#">link 1</a></li>#}
+        {#                <li><a href="#">link 2</a></li>#}
+        {#                <li><a href="#">link 3</a></li>#}
+        {#                <li><a href="#">link 4</a></li>#}
+        {#            </ul>#}
+        {#            <h3>Search</h3>#}
+        {#            <form method="post" action="#" id="search_form">#}
+        {#                <p>#}
+        {#                    <input class="search" type="text" name="search_field" value="Enter keywords....."/>#}
+        {#                    <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;"#}
+        {#                           src="../../static/style/search.png" alt="Search" title="Search"/>#}
+        {#                </p>#}
+        {#            </form>#}
+        {#        </div>#}
+        {% block content %}
+
+        {% endblock content %}
+    </div>
+
+</div>
+</body>
+</html>
